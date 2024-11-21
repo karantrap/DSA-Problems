@@ -10,10 +10,10 @@ void fillsieve(vector<bool>&sieve){
                 sieve[j]=0; //0 is indicating non prime
             }
         }
-        
-
 }
 int countPrimes(int n){
+
+    
     if(n<=2) return 0;
     n=n-1;
     vector<bool>sieve(n+1,1);//size is n+1 as i want 1 on 1 index means each number is on it's own index and 1 is indicating the prime number
