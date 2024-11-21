@@ -10,6 +10,7 @@ void fillsieve(vector<bool>&sieve){
                 sieve[j]=0; //0 is indicating non prime
             }
         }
+        
 }
 int countPrimes(int n){
     if(n<=2) return 0;
