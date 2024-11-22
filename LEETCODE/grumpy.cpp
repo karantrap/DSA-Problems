@@ -9,12 +9,13 @@ int main(){
     for(int i=0;i<n;i++){
         grumpy[i]=0;
     }
-    
     for(int i=0;i<=n-k;i++){
         int sum=0;
         for(int j=i;j<=i+k;j++){
             sum+=a[j];
         }
+
+        
         maxsum=max(maxsum,sum);
     }
     cout<<maxsum<<endl;
