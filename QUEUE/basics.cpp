@@ -11,7 +11,7 @@ int main(){
     cout<<q.front()<<endl;
 
     while(q.size()>0){
-        cout<<q.front()<<" ";
+        cout<<q.front()<<" ;
         q.pop();
     }
 }

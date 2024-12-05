@@ -21,6 +21,6 @@ int main(){
     Node*d=new Node(40);
     a->next=b;
     b->next=c;
-    c->next=d;
+    c->next=d;   
     reverse(a);
 }

@@ -21,7 +21,7 @@ void rotate(Node*head,int k,int len){
     Node*temp2=head;
     int pos=len-k+1;
     for(int i=0;i<pos-1;i++){
-        temp2=temp->next;
+        temp2=temp2 ->next;
     }
     Node*temp4=temp2;
     head=temp4->next;
