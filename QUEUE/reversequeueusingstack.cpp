@@ -11,6 +11,7 @@ void display(queue<int>&q){
         q.push(x);
     }
 }
+//it is for reversing the queue
 void reversequeue(queue<int>&q){
     int n=q.size();
     stack<int>st;
