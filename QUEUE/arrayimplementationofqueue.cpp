@@ -81,5 +81,9 @@ int main(){
     q.display();
     q.pop();
     q.display();
-    cout<<q.front();
+    cout<<q.front()<<endl;
+    cout<<q.back();
 }
+
+
+
