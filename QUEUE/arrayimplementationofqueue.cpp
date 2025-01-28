@@ -50,7 +50,7 @@ class Queue{
         return arr[b-1];
     }
 
-    //IMPLEMENTING SIZE
+    //IMPLEMENTING SIZE  
     int size(){
         return b-f;
     }
