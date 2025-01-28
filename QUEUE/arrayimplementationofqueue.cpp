@@ -10,7 +10,7 @@ class Queue{
         f=0;
         b=0;
         vector<int>v(val); 
-        arr=v;   
+        arr=v;     
     }
     //IMPLEMENTING PUSH  
 
