@@ -10,6 +10,7 @@ void display(queue<int>&q){
         q.pop();
         q.push(x);
     }
+    cout<<endl;
 }
 //it is for reversing the queue
 void reversequeue(queue<int>&q){
@@ -33,5 +34,7 @@ int main(){
     q.push(30);
     q.push(40);
     q.push(50);
+    display(q);
+
     reversequeue(q);
 }

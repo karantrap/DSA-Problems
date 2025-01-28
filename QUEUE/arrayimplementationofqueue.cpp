@@ -12,7 +12,7 @@ class Queue{
         vector<int>v(val); 
         arr=v;   
     }
-    //IMPLEMENTING PUSH
+    //IMPLEMENTING PUSH  
 
     void push(int val){
         if(b==arr.size()){
