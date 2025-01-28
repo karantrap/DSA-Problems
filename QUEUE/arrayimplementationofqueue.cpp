@@ -18,7 +18,7 @@ class Queue{
         if(b==arr.size()){
             cout<<"queue is full"<<endl;
             return;
-        }
+        }     
         arr[b]=val;
         b++;
     }
