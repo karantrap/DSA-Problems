@@ -77,5 +77,5 @@ int main(){
     q.pop();
     q.display();
     cout<<q.front()<<endl;
-    cout<<q.back();
+    cout<<q.back(); 
 }
