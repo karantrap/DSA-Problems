@@ -75,14 +75,16 @@ int main(){
     q.push(20);
     q.push(30);
     q.push(40);
-    q.display();
     q.push(50);
+    q.display();
     q.push(60);
     q.display();
     q.pop();
     q.display();
     cout<<q.front()<<endl;
-    cout<<q.back();
+    cout<<q.back()<<endl;
+    q.pop();
+    cout<<q.front();
 }
 
 
