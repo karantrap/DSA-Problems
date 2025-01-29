@@ -5,10 +5,12 @@ class Queue{
     public:
     int f;
     int b;
+    int s;
     vector<int>arr;
     Queue(int val){
         f=0;
         b=0;
+        s=0;
         vector<int>v(val); 
         arr=v;     
     }
@@ -21,20 +23,22 @@ class Queue{
         }     
         arr[b]=val;
         b++;
+        s++;
     }
 
     //IMPLEMENTING POP
     void pop(){
-        if(b-f==0){
+        if(s==0){
             cout<<"queue is empty";
             return;
         }
         f++;
+        s--;
     }
 
     //IMPLEMENTING FRONT
     int front(){
-        if(b-f==0){
+        if(s==0){
             cout<<"queue is empty";
             return -1;
         }
@@ -43,7 +47,7 @@ class Queue{
 
     //IMPLEMENTING BACK
     int back(){
-        if(b-f==0){
+        if(s==0){
             cout<<"queue is empty";
             return -1;
         }
@@ -52,12 +56,12 @@ class Queue{
 
     //IMPLEMENTING SIZE  
     int size(){
-        return b-f;
+        return s;
     }
 
     //IMPLEMENTING EMPTY
     bool empty(){
-        if(b-f==0) return true;
+        if(s==0) return true;
         else return false;
     }
 

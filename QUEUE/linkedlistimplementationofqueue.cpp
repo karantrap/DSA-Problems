@@ -31,8 +31,10 @@ class Queue{
             cout<<"Queue is empty";
             return;
         }
+        Node*temp=head;
         head=head->next;
         s--;
+        delete(temp); //isse na wastage nhi hogi space ki
     }
     int front(){
         if(s==0){
