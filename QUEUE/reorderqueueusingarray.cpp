@@ -35,5 +35,6 @@ int main(){
     while(i<n/2) q.push(arr[i++]);
     while(j<n) q.push(arr[j++]);
     display(q);
+    
 
 }
