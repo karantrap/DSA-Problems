@@ -2,10 +2,13 @@
 #include<queue>
 #include<stack>
 using namespace std;
-void display(queue<int>q){
-    while(q.size()>0){
-        cout<<q.front()<<" ";
+void display(queue<int>&q){
+    int n=q.size();
+    for(int i=0;i<n;i++){
+        int x=q.front();
+        cout<<x<<" ";
         q.pop();
+        q.push(x);
     }
     cout<<endl;
 }
