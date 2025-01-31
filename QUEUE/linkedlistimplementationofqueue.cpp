@@ -55,7 +55,7 @@ class Queue{
         while(temp!=NULL){
             cout<<temp->val<<" ";
             temp=temp->next;
-        }
+        }  
         cout<<endl;
     }
     int size(){
