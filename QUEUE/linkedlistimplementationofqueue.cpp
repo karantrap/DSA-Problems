@@ -24,7 +24,7 @@ class Queue{
             tail->next=temp;
             tail=temp;
         }
-        s++;
+        s++; 
     }
     void pop(){  //deleteAtHead
         if(s==0){
