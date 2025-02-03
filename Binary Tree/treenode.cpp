@@ -44,9 +44,12 @@ int minvalue(Node*root){
     int ans=min(root->val,min(minvalue(root->left),minvalue(root->right)));
     return ans;   
 }
-int height(Node*root){
+int level(Node*root){
     if(root==NULL) return 0;
-    return 1+min(height(root->left),height(root->right));
+    return 1+max(level(root->left),level(root->right));
+}
+int height(Node*root){
+    return level(root)-1;
 }
 int main(){
     Node*a=new Node(-12);
@@ -69,5 +72,6 @@ int main(){
     cout<<maxvalue(a)<<endl;
     cout<<product(a)<<endl;
     cout<<minvalue(a)<<endl;
-    cout<<height(a);
+    cout<<level(a)<<endl;
+    cout<<height(a)<<endl;
 }
