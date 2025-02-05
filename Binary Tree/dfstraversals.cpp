@@ -26,7 +26,7 @@ void inorder(Node*root){   //left root right
 void postorder(Node*root){   //left right root
     if(root==NULL) return;
     postorder(root->left);
-    postorder(root->right); 
+    postorder(root->right);  
     cout<<root->val<<" ";
 }
 int main(){
