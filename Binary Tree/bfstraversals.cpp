@@ -40,6 +40,24 @@ void levelorder(Node*root){
         cout<<endl;
     }
 }
+//LEVEL ORDER TRAVERSAL FROM RIGHT TO LEFT
+
+void nthlevel2(Node*root,int currlevel,int level){
+    if(root==NULL) return;
+    if(currlevel==level){
+        cout<<root->val<<" ";
+        return;
+    }
+    nthlevel2(root->right,currlevel+1,level);
+    nthlevel2(root->left,currlevel+1,level);
+}
+void levelorder2(Node*root){
+    int n=level(root);
+    for(int i=1;i<=n;i++){
+        nthlevel2(root,1,i);
+        cout<<endl;
+    }
+}
 int main(){
     Node*a=new Node(1);
     Node*b=new Node(7);
@@ -64,4 +82,7 @@ int main(){
     nthlevel(a,1,3);
     cout<<endl;
     levelorder(a);
+    cout<<endl;
+    cout<<endl;
+    levelorder2(a);
 }
