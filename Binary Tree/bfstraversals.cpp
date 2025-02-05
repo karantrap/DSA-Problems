@@ -25,7 +25,10 @@ int level(Node*root){
 }
 void nthlevel(Node*root,int currlevel,int level){
     if(root==NULL) return;
-    if(currlevel==level) cout<<root->val<<" ";
+    if(currlevel==level){
+        cout<<root->val<<" ";
+        return;
+    }
     nthlevel(root->left,currlevel+1,level);
     nthlevel(root->right,currlevel+1,level);
 }
