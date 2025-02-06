@@ -69,7 +69,7 @@ void lorderbyqueue(Node*root){
         q.pop();
         cout<<temp->val<<" ";
         if(temp->left!=NULL) q.push(temp->left);
-        if(temp->right!=NULL) q.push(temp->right);
+        if(temp->right!=NULL) q.push(temp-> right);
     }
 }
 int main(){
@@ -101,5 +101,5 @@ int main(){
     levelorder2(a);
     cout<<endl;
     cout<<endl;
-    lorderbyqueue(a);
+    lorderbyqueue(a); 
 }
