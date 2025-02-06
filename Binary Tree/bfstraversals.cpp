@@ -1,6 +1,7 @@
 #include<iostream>
 #include<climits>
 #include<algorithm>
+#include<queue>
 using namespace std;
 class Node{
     public:
@@ -57,6 +58,19 @@ void levelorder2(Node*root){
         nthlevel2(root,1,i);
         cout<<endl;
     }
+} 
+
+//LEVEL ORDER TRAVERSAL USING QUEUE (BFS)
+void lorderbyqueue(Node*root){
+    queue<Node*>q;
+    q.push(root);
+    while(q.size()>0){
+        Node*temp=q.front();
+        q.pop();
+        cout<<temp->val<<" ";
+        if(temp->left!=NULL) q.push(temp->left);
+        if(temp->right!=NULL) q.push(temp->right);
+    }
 }
 int main(){
     Node*a=new Node(1);
@@ -85,4 +99,7 @@ int main(){
     cout<<endl;
     cout<<endl;
     levelorder2(a);
+    cout<<endl;
+    cout<<endl;
+    lorderbyqueue(a);
 }
