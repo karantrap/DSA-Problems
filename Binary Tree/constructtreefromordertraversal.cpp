@@ -45,12 +45,12 @@ void lorderbyqueue(Node*root){
         q.pop();
         cout<<temp->val<<" ";
         if(temp->left!=NULL) q.push(temp->left);
-        if(temp->right!=NULL) q.push(temp->right);    
+        if(temp->right!=NULL) q.push(temp->right);      
     }
 }
 int main(){
     int a[]={1,2,3,4,5,INT_MIN,6,INT_MIN,INT_MIN,7,8,9,INT_MIN};
     int n=sizeof(a)/sizeof(a[0]);
     Node*root=construct(a,n);
-    lorderbyqueue(root);
+    lorderbyqueue(root);  
 }
