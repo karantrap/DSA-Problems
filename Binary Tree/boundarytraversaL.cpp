@@ -68,9 +68,9 @@ void leftBoundary(Node*root){ //to print left boundary
 void bottomBoundary(Node*root){ //to print leaf nodes
     if(root==NULL) return;
     if(root->left==NULL && root->right==NULL) cout<<root->val<<" ";
-    bottomBoundary(root->left);
-    bottomBoundary(root->right);
-}      
+    bottomBoundary(root->left);   
+    bottomBoundary(root->right);  
+}       
 void rightBoundary(Node*root){ //to print right boundary in reverse order
     if(root==NULL) return;
     if(root->left==NULL && root->right==NULL) return;
