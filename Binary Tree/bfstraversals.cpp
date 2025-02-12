@@ -57,8 +57,9 @@ void levelorder2(Node*root){
     for(int i=1;i<=n;i++){
         nthlevel2(root,1,i);
         cout<<endl;
-    }
+    }   
 } 
+
 
 //LEVEL ORDER TRAVERSAL USING QUEUE (BFS)
 void lorderbyqueue(Node*root){
