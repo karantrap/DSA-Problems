@@ -33,8 +33,8 @@ Node* construct(int a[],int n){
         if(l!=NULL) q.push(l);
         if(r!=NULL) q.push(r);
         i+=2;
-        j+=2;
-    }
+        j+=2;   
+    } 
     return root;
 }
 void lorderbyqueue(Node*root){
