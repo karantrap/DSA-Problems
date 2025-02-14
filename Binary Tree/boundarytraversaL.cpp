@@ -64,25 +64,25 @@ void leftBoundary(Node*root){ //to print left boundary
     cout<<root->val<<" ";
     leftBoundary(root->left);
     if(root->left==NULL) leftBoundary(root->right);
-}
+}  
 void bottomBoundary(Node*root){ //to print leaf nodes
     if(root==NULL) return;
     if(root->left==NULL && root->right==NULL) cout<<root->val<<" ";
     bottomBoundary(root->left);   
     bottomBoundary(root->right);  
-}       
+}        
 void rightBoundary(Node*root){ //to print right boundary in reverse order
     if(root==NULL) return;
     if(root->left==NULL && root->right==NULL) return;
     rightBoundary(root->right);
     if(root->right==NULL) rightBoundary(root->left);
     cout<<root->val<<" ";
-}
+}  
 void boundary(Node*root){
     leftBoundary(root);
     bottomBoundary(root);
     rightBoundary(root->right);
-}
+} 
 int main(){
     int a[]={1,2,3,4,5,INT_MIN,6,7,INT_MIN,8,INT_MIN,9,10,INT_MIN,11,INT_MIN,12,INT_MIN,13,INT_MIN,14,15,16,INT_MIN,17,INT_MIN,INT_MIN,18,INT_MIN,19,INT_MIN,INT_MIN,INT_MIN,20,21,22,23,INT_MIN,24,25,26,29,INT_MIN,INT_MIN,28,INT_MIN,INT_MIN};
     int n=sizeof(a)/sizeof(a[0]);
