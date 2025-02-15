@@ -36,17 +36,17 @@ Node* construct(int a[],int n){ //BFS VVIMP
         Node*temp=q.front();
         q.pop();
         Node*l;
-        Node*r;
+        Node*r; 
         if(a[i]!=INT_MIN) l=new Node(a[i]);
         else l=NULL;
         if(j!=n && a[j]!=INT_MIN) r=new Node(a[j]);
         else r=NULL;
-        temp->left=l;
+        temp->left=l; 
         temp->right=r;
         if(l!=NULL) q.push(l);
         if(r!=NULL) q.push(r);
         i+=2;
-        j+=2;
+        j+=2; 
     }
     return root;
 }
