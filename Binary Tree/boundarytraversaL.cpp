@@ -38,7 +38,7 @@ Node* construct(int a[],int n){ //BFS VVIMP
         Node*l;
         Node*r; 
         if(a[i]!=INT_MIN) l=new Node(a[i]);
-        else l=NULL;
+        else l=NULL; 
         if(j!=n && a[j]!=INT_MIN) r=new Node(a[j]);
         else r=NULL;
         temp->left=l; 
