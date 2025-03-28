@@ -5,7 +5,7 @@ int main(){
     int a[]={10,9,8,7,4,70,60,50};
     int k=4;
     int n=sizeof(a)/sizeof(a[0]);
-    priority_queue<int,vector<int>,greater<int>>pq;
+    priority_queue<int,vector<int>,greater<int>>pq; //for ascending we will use min heap
     vector<int>ans;
     for(int i=0;i<n;i++){
         pq.push(a[i]);
