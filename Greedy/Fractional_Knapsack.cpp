@@ -33,7 +33,7 @@ int main(){
     vector<int>profits={60,100,150};
     vector<int>weights={10,20,30};
     int n=3;
-    int W=50;
+    int W=60;
     cout<<FracKnap(profits,weights,n,W);
     return 0;
 }
