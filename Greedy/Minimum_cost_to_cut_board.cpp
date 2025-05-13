@@ -3,11 +3,11 @@
 #include<algorithm>
 using namespace std;
 int MinCost(vector<int>&x,vector<int>&y,int m,int n){
-    int hb=1;
-    int vb=1;
+    int hb=1;//no of horizontal blocks
+    int vb=1;//no of vertical blocks
     sort(x.rbegin(),x.rend());
     sort(y.rbegin(),y.rend());
-    int v=0;
+    int v=0;  //here v and h are just two pointers for trvaersal of both arrays
     int h=0;
     int cost=0;
     while(v<x.size() && h<y.size()){
