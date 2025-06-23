@@ -12,9 +12,22 @@ long long f(int n,vector<long long>&dp){
     }
     return dp[n]=sum%mod;
 }
+//BOTTOM UP APPROACH
+int fbu(int n,vector<long long>dp){
+    dp[0]=1;
+    for(int k=1;k<=n;k++){
+        long long sum=0;
+        for(int i=1;i<=6;i++){
+            if(k-i<0) break;
+            sum=(sum%mod+dp[k-i]%mod)%mod;
+        }
+        dp[k]=sum%mod;
+    }
+    return dp[n];
+}
 int main(){
     vector<long long>dp(1000005,-1);
     int n;
     cin>>n;
-    cout<<f(n,dp);
+    cout<<fbu(n,dp);
 }
